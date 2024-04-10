@@ -1,1 +1,4543 @@
-[]
+[
+    {
+        "id": "8e47835b6811afb5",
+        "type": "tab",
+        "label": "INIT",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7dcfd4ba3841be1d",
+        "type": "tab",
+        "label": "DATA",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4b1b4aacfc414975",
+        "type": "tab",
+        "label": "IO-LINK",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "87fe75fba6b00d60",
+        "type": "tab",
+        "label": "LOCALIZATION",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ac1b7f858f654d07",
+        "type": "tab",
+        "label": "CONNECTIVITY & MONITORING",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "bd6c8a1221e50f23",
+        "type": "tab",
+        "label": "CSV DATA",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b693f57f4f535bde",
+        "type": "tab",
+        "label": "DESCARGA USB",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d8eff534107492f4",
+        "type": "subflow",
+        "name": "Data Filter",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "f609c24213207429"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1160,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "9a319f2f1d0da5e6",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "40ac7eb6a389d215",
+        "type": "subflow",
+        "name": "IO - Link Master Props",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "695a37a5f877c95a"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 860,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "6c7da7ba3d70a9fa",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "MASTER_IP",
+                "type": "str",
+                "value": "192.168.82.75"
+            }
+        ],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "c395f374d5bba422",
+        "type": "subflow",
+        "name": "IO - Link Master Data",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 180,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "3630bc778c27df77"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 920,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "c15cf967684ffca6",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "MASTER_IP",
+                "type": "str",
+                "value": "192.168.82.75"
+            }
+        ],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "1af9c3d86050e6d8",
+        "type": "subflow",
+        "name": "IO - Link Port Data",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 200,
+                "y": 240,
+                "wires": [
+                    {
+                        "id": "481c54b5c45a7a73"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1000,
+                "y": 240,
+                "wires": [
+                    {
+                        "id": "6e1c2ee35532d0e4",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "PORT",
+                "type": "num",
+                "value": "1"
+            },
+            {
+                "name": "MASTER_IP",
+                "type": "str",
+                "value": "192.168.82.75"
+            }
+        ],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "19b6f50e55a455e1",
+        "type": "group",
+        "z": "d8eff534107492f4",
+        "name": "ORIGINAL",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f1632e3bd92b44c4",
+            "065a3d5ac1b7f5d4",
+            "9a6c333b4b587bad",
+            "5c8b5d9c9ceccadf",
+            "0b717de283f6608d",
+            "7f226d4c25819e01",
+            "c56add60c00b9105",
+            "aef04260775add9c",
+            "b715af7cce48c58f"
+        ],
+        "x": 174,
+        "y": 419
+    },
+    {
+        "id": "5e1259dc7139fde8",
+        "type": "group",
+        "z": "d8eff534107492f4",
+        "name": "GROUPS",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "068e41dcad5a94f2",
+            "a970ca42e4ab7731",
+            "1ef9c9770fbce19a",
+            "b9cd078dfd556774"
+        ],
+        "x": 894,
+        "y": 559
+    },
+    {
+        "id": "1f18b9b8764a1785",
+        "type": "group",
+        "z": "7dcfd4ba3841be1d",
+        "name": "Guardado de data offline",
+        "style": {
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "b9d38b5e6e1f073e",
+            "62c8271bae5eb53d",
+            "52ad0311966dd710",
+            "f3159f19b27bce70",
+            "0ae262d37f890248",
+            "b16970a0fdedc8cb"
+        ],
+        "x": 54,
+        "y": 519,
+        "w": 812,
+        "h": 122
+    },
+    {
+        "id": "cce43c31c24f1ee1",
+        "type": "group",
+        "z": "7dcfd4ba3841be1d",
+        "name": "Recuperar y enviar la data adquirida offline",
+        "style": {
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "01207b1a9090a113",
+            "84e770d69f447dc8",
+            "e977377a8f2b8b1f",
+            "8b18d54678984ed7",
+            "b6ef553a4cd0fd14",
+            "59b0964c4be0bc7d",
+            "7a0f624f343a5234",
+            "4d8e90046bdc84ea"
+        ],
+        "x": 54,
+        "y": 679,
+        "w": 1212,
+        "h": 162
+    },
+    {
+        "id": "24d00d6b1a472a12",
+        "type": "group",
+        "z": "bd6c8a1221e50f23",
+        "name": "Seleccionar y eliminar data de la última semana ",
+        "style": {
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "5c869004c94f9e5b",
+            "6be862ef70aa5ce0",
+            "a7d503cc74fad55a",
+            "c304b9efafbee2ce",
+            "6da3f330a7d17166",
+            "bdd4d3fb6e929cc7",
+            "c659995ce3fdc68c",
+            "c4ff83c05b9335ed",
+            "08bfa969958c3141",
+            "a0b002195171260a",
+            "f5322cda4a2f356c",
+            "05d8f608fe5eb3a7",
+            "4512bff38c8cd675",
+            "09cf833d23521682",
+            "2d67596ed3833f21",
+            "dd8a380bf429ee41",
+            "2f7815677a9ccbf3",
+            "1f4d74f8a25a0a45",
+            "d6bc1a7f4549becc"
+        ],
+        "x": 34,
+        "y": 79,
+        "w": 1572,
+        "h": 262
+    },
+    {
+        "id": "6b7c1f4fbbe77c84",
+        "type": "group",
+        "z": "7dcfd4ba3841be1d",
+        "name": "Guardado de data local",
+        "style": {
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "121f11e8ca291a0e",
+            "c4c0299bf7185dbc",
+            "bcd67702c395a8fb",
+            "838733237fd1d982",
+            "80cc8c7dae71c897",
+            "2a844fa766724955",
+            "075b0b8dcac942e6"
+        ],
+        "x": 64,
+        "y": 359,
+        "w": 962,
+        "h": 122
+    },
+    {
+        "id": "1d1b1c227a0bc262",
+        "type": "group",
+        "z": "7dcfd4ba3841be1d",
+        "name": "DELETE ALL DATA MANUALLY (CAREFULL)",
+        "style": {
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "545927d79126b532",
+            "75f4430f63d837a1",
+            "0c617771a3bf80f9"
+        ],
+        "x": 54,
+        "y": 879,
+        "w": 572,
+        "h": 82
+    },
+    {
+        "id": "2464b523963ae302",
+        "type": "group",
+        "z": "7dcfd4ba3841be1d",
+        "name": "ENVIO A LA NUBE",
+        "style": {
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "10fe9b1f0057fb10",
+            "ce80aa21413d62c3",
+            "d825a23051422fb4",
+            "c37ab1deec531147",
+            "d98ab125d5953ad2",
+            "f5a75f5cdcb3c4dd",
+            "1e25561a9469138c"
+        ],
+        "x": 54,
+        "y": 79,
+        "w": 632,
+        "h": 222
+    },
+    {
+        "id": "eadfda525a15b034",
+        "type": "serial-port",
+        "serialport": "/dev/ttyUSB1",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "8d53d2f17df7fbc4",
+        "type": "mqtt-broker",
+        "name": "ACME_broker",
+        "broker": "161.132.39.167",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "88b50ad2f3359e26",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "acme_db",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "f609c24213207429",
+        "type": "split",
+        "z": "d8eff534107492f4",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 230,
+        "y": 160,
+        "wires": [
+            [
+                "1b1a8933b398d83e"
+            ]
+        ]
+    },
+    {
+        "id": "9a319f2f1d0da5e6",
+        "type": "join",
+        "z": "d8eff534107492f4",
+        "name": "join",
+        "mode": "auto",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1050,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1b1a8933b398d83e",
+        "type": "switch",
+        "z": "d8eff534107492f4",
+        "name": "",
+        "property": "payload.productname",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "TW2000",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "TP",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "DP2200",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 390,
+        "y": 160,
+        "wires": [
+            [
+                "464308600402051f"
+            ],
+            [
+                "835a9b043fd81878"
+            ],
+            [
+                "f6034bee90468ee3"
+            ],
+            [
+                "7ea3b34a7bb15b0a"
+            ]
+        ]
+    },
+    {
+        "id": "7ea3b34a7bb15b0a",
+        "type": "change",
+        "z": "d8eff534107492f4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.data",
+                "pt": "msg",
+                "to": "Not recognized",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 280,
+        "wires": [
+            [
+                "9a319f2f1d0da5e6"
+            ]
+        ]
+    },
+    {
+        "id": "f1632e3bd92b44c4",
+        "type": "buffer-parser",
+        "z": "d8eff534107492f4",
+        "d": true,
+        "g": "19b6f50e55a455e1",
+        "name": "PV8002",
+        "data": "payload.data",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "int16be",
+                "name": "pressure",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.1",
+                "mask": ""
+            },
+            {
+                "type": "int8",
+                "name": "scale-pressure",
+                "offset": 2,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "int16be",
+                "name": "temperature",
+                "offset": 4,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.01",
+                "mask": ""
+            },
+            {
+                "type": "int8",
+                "name": "scale-temperature",
+                "offset": 6,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "int8",
+                "name": "status",
+                "offset": 7,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": ">>4",
+                "mask": "0xF0"
+            },
+            {
+                "type": "bool",
+                "name": "out1",
+                "offset": 7,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "bool",
+                "name": "out2",
+                "offset": 7,
+                "length": 1,
+                "offsetbit": 1,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload.data",
+        "msgPropertyType": "str",
+        "resultType": "keyvalue",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 260,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "065a3d5ac1b7f5d4",
+        "type": "buffer-parser",
+        "z": "d8eff534107492f4",
+        "d": true,
+        "g": "19b6f50e55a455e1",
+        "name": "PV8000",
+        "data": "payload.data",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "int16be",
+                "name": "pressure",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.1",
+                "mask": ""
+            },
+            {
+                "type": "int8",
+                "name": "scale-pressure",
+                "offset": 2,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "int16be",
+                "name": "temperature",
+                "offset": 4,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.01",
+                "mask": ""
+            },
+            {
+                "type": "int8",
+                "name": "scale-temperature",
+                "offset": 6,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "int8",
+                "name": "status",
+                "offset": 7,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": ">>4",
+                "mask": "0xF0"
+            },
+            {
+                "type": "bool",
+                "name": "out1",
+                "offset": 7,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "bool",
+                "name": "out2",
+                "offset": 7,
+                "length": 1,
+                "offsetbit": 1,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload.data",
+        "msgPropertyType": "str",
+        "resultType": "keyvalue",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 260,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9a6c333b4b587bad",
+        "type": "buffer-parser",
+        "z": "d8eff534107492f4",
+        "d": true,
+        "g": "19b6f50e55a455e1",
+        "name": "TA2105",
+        "data": "payload.data",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "int16be",
+                "name": "temperature",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload.data",
+        "msgPropertyType": "str",
+        "resultType": "keyvalue",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 260,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0b717de283f6608d",
+        "type": "buffer-parser",
+        "z": "d8eff534107492f4",
+        "d": true,
+        "g": "19b6f50e55a455e1",
+        "name": "IG6086",
+        "data": "payload.data",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "int16be",
+                "name": "pdv1",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "uint8",
+                "name": "scale",
+                "offset": 2,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "uint8",
+                "name": "status",
+                "offset": 3,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": ">>4",
+                "mask": "0xF0"
+            },
+            {
+                "type": "bool",
+                "name": "ssc1",
+                "offset": 3,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "bool",
+                "name": "ssc2",
+                "offset": 3,
+                "length": 1,
+                "offsetbit": 1,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload.data",
+        "msgPropertyType": "str",
+        "resultType": "keyvalue",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 260,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5c8b5d9c9ceccadf",
+        "type": "buffer-parser",
+        "z": "d8eff534107492f4",
+        "d": true,
+        "g": "19b6f50e55a455e1",
+        "name": "O1D103",
+        "data": "payload.data",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "int16be",
+                "name": "distance",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "uint8",
+                "name": "reflectivity",
+                "offset": 4,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "uint8",
+                "name": "status",
+                "offset": 7,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": ">>4",
+                "mask": "0xF0"
+            },
+            {
+                "type": "bool",
+                "name": "out1",
+                "offset": 7,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "bool",
+                "name": "out2",
+                "offset": 7,
+                "length": 1,
+                "offsetbit": 1,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload.data",
+        "msgPropertyType": "str",
+        "resultType": "keyvalue",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 260,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f226d4c25819e01",
+        "type": "buffer-parser",
+        "z": "d8eff534107492f4",
+        "d": true,
+        "g": "19b6f50e55a455e1",
+        "name": "TW2000",
+        "data": "payload.data",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "int16be",
+                "name": "temperature",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.1",
+                "mask": ""
+            },
+            {
+                "type": "byte",
+                "name": "scale",
+                "offset": 3,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": "0xF0"
+            },
+            {
+                "type": "uint8",
+                "name": "status",
+                "offset": 3,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": ">>4",
+                "mask": "0xF0"
+            },
+            {
+                "type": "bool",
+                "name": "out1",
+                "offset": 3,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload.data",
+        "msgPropertyType": "str",
+        "resultType": "keyvalue",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 260,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c56add60c00b9105",
+        "type": "buffer-parser",
+        "z": "d8eff534107492f4",
+        "d": true,
+        "g": "19b6f50e55a455e1",
+        "name": "VVB021",
+        "data": "payload.data",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "int16be",
+                "name": "vrms",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.0001",
+                "mask": ""
+            },
+            {
+                "type": "uint8",
+                "name": "scale-vrms",
+                "offset": 2,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "int16be",
+                "name": "apeak",
+                "offset": 4,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.1",
+                "mask": ""
+            },
+            {
+                "type": "uint8",
+                "name": "scale-apeak",
+                "offset": 6,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "int16be",
+                "name": "arms",
+                "offset": 8,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.1",
+                "mask": ""
+            },
+            {
+                "type": "uint8",
+                "name": "scale-arms",
+                "offset": 10,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "int16be",
+                "name": "temperature",
+                "offset": 12,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.1",
+                "mask": ""
+            },
+            {
+                "type": "uint8",
+                "name": "scale-temperature",
+                "offset": 14,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "uint16be",
+                "name": "crest",
+                "offset": 16,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.1",
+                "mask": ""
+            },
+            {
+                "type": "uint8",
+                "name": "scale-crest",
+                "offset": 18,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "uint8",
+                "name": "status",
+                "offset": 19,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": "0xF0"
+            },
+            {
+                "type": "bool",
+                "name": "out1",
+                "offset": 19,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "bool",
+                "name": "out2",
+                "offset": 19,
+                "length": 1,
+                "offsetbit": 1,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload.data",
+        "msgPropertyType": "str",
+        "resultType": "keyvalue",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 260,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "464308600402051f",
+        "type": "buffer-parser",
+        "z": "d8eff534107492f4",
+        "name": "TW2000",
+        "data": "payload.data",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "int16be",
+                "name": "temperature",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.1",
+                "mask": ""
+            },
+            {
+                "type": "byte",
+                "name": "scale",
+                "offset": 3,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": "0xF0"
+            },
+            {
+                "type": "uint8",
+                "name": "status",
+                "offset": 3,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": ">>4",
+                "mask": "0xF0"
+            },
+            {
+                "type": "bool",
+                "name": "out1",
+                "offset": 3,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload.data",
+        "msgPropertyType": "str",
+        "resultType": "keyvalue",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 580,
+        "y": 80,
+        "wires": [
+            [
+                "9a319f2f1d0da5e6"
+            ]
+        ]
+    },
+    {
+        "id": "835a9b043fd81878",
+        "type": "buffer-parser",
+        "z": "d8eff534107492f4",
+        "name": "TP",
+        "data": "payload.data",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "int16be",
+                "name": "temperature",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload.data",
+        "msgPropertyType": "str",
+        "resultType": "keyvalue",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 570,
+        "y": 140,
+        "wires": [
+            [
+                "9a319f2f1d0da5e6"
+            ]
+        ]
+    },
+    {
+        "id": "068e41dcad5a94f2",
+        "type": "buffer-parser",
+        "z": "d8eff534107492f4",
+        "d": true,
+        "g": "5e1259dc7139fde8",
+        "name": "PV8",
+        "data": "payload.data",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "int16be",
+                "name": "pressure",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload.data",
+        "msgPropertyType": "str",
+        "resultType": "keyvalue",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 970,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a970ca42e4ab7731",
+        "type": "buffer-parser",
+        "z": "d8eff534107492f4",
+        "d": true,
+        "g": "5e1259dc7139fde8",
+        "name": "TA2",
+        "data": "payload.data",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "int16be",
+                "name": "temperature",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload.data",
+        "msgPropertyType": "str",
+        "resultType": "keyvalue",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 970,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1ef9c9770fbce19a",
+        "type": "buffer-parser",
+        "z": "d8eff534107492f4",
+        "d": true,
+        "g": "5e1259dc7139fde8",
+        "name": "O1D",
+        "data": "payload.data",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "int16be",
+                "name": "distance",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "uint8",
+                "name": "reflectivity",
+                "offset": 4,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "uint8",
+                "name": "status",
+                "offset": 7,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": ">>4",
+                "mask": "0xF0"
+            },
+            {
+                "type": "bool",
+                "name": "out1",
+                "offset": 7,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            },
+            {
+                "type": "bool",
+                "name": "out2",
+                "offset": 7,
+                "length": 1,
+                "offsetbit": 1,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload.data",
+        "msgPropertyType": "str",
+        "resultType": "keyvalue",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 970,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b9cd078dfd556774",
+        "type": "buffer-parser",
+        "z": "d8eff534107492f4",
+        "d": true,
+        "g": "5e1259dc7139fde8",
+        "name": "TP",
+        "data": "payload.data",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "int16be",
+                "name": "temperature",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload.data",
+        "msgPropertyType": "str",
+        "resultType": "keyvalue",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 970,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aef04260775add9c",
+        "type": "buffer-parser",
+        "z": "d8eff534107492f4",
+        "d": true,
+        "g": "19b6f50e55a455e1",
+        "name": "TP3231",
+        "data": "payload.data",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "int16be",
+                "name": "temperature",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload.data",
+        "msgPropertyType": "str",
+        "resultType": "keyvalue",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 260,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "16f46587a48f6949",
+        "type": "comment",
+        "z": "d8eff534107492f4",
+        "name": "Para realizar las librerías se trabajaron originalmente con estos sensores",
+        "info": "",
+        "x": 280,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "4623fa944eb5a7d5",
+        "type": "comment",
+        "z": "d8eff534107492f4",
+        "name": "A partir de ello y viendo que se repite para más de un sensor, se agruparon por códigos.",
+        "info": "",
+        "x": 940,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "27193819961b66c1",
+        "type": "comment",
+        "z": "d8eff534107492f4",
+        "name": " (Revisar igual el IODD del sensor que trabajes)",
+        "info": "",
+        "x": 960,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "f6034bee90468ee3",
+        "type": "buffer-parser",
+        "z": "d8eff534107492f4",
+        "name": "DP2200",
+        "data": "payload.data",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "int16be",
+                "name": "current",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.001",
+                "mask": ""
+            },
+            {
+                "type": "bool",
+                "name": "out1",
+                "offset": 2,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.001",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload.data",
+        "msgPropertyType": "str",
+        "resultType": "keyvalue",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 580,
+        "y": 200,
+        "wires": [
+            [
+                "e13dcd6a5f4829b2"
+            ]
+        ]
+    },
+    {
+        "id": "b715af7cce48c58f",
+        "type": "buffer-parser",
+        "z": "d8eff534107492f4",
+        "d": true,
+        "g": "19b6f50e55a455e1",
+        "name": "DP2200",
+        "data": "payload.data",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "int16be",
+                "name": "current",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.001",
+                "mask": ""
+            },
+            {
+                "type": "bool",
+                "name": "out1",
+                "offset": 2,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "0.001",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload.data",
+        "msgPropertyType": "str",
+        "resultType": "keyvalue",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 260,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e13dcd6a5f4829b2",
+        "type": "function",
+        "z": "d8eff534107492f4",
+        "name": "add or conv data",
+        "func": "const current = msg.payload.data.current;\n\nmsg.payload.data.temperature = mapValues(current, 4, 20, 0, 200);\n\nreturn msg;\n\nfunction mapValues(value, minInput, maxInput, minOutput, maxOutput) {\n    // Asegurarse de que el valor esté dentro del rango de entrada\n    value = Math.max(minInput, Math.min(maxInput, value));\n\n    // Calcular la proporción del valor en el rango de entrada\n    const ratio = (value - minInput) / (maxInput - minInput);\n\n    // Escalar la proporción al rango de salida y redondear al entero más cercano\n    return Math.round(minOutput + ratio * (maxOutput - minOutput));\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 200,
+        "wires": [
+            [
+                "9a319f2f1d0da5e6"
+            ]
+        ]
+    },
+    {
+        "id": "695a37a5f877c95a",
+        "type": "function",
+        "z": "40ac7eb6a389d215",
+        "name": "GET MASTER PROPERTIES",
+        "func": "\n\nmsg.payload = {\n  \"code\": \"request\",\n  \"cid\": 1,\n  \"adr\": \"/getdatamulti\",\n  \"data\": {\n    \"datatosend\": [\n      \"/deviceinfo/productcode\",\n      \"/deviceinfo/serialnumber\",\n      \"/deviceinfo/fieldbustype\",\n      \"/deviceinfo/devicefamily\",\n      \"/processdatamaster/temperature\",\n      \"/processdatamaster/temperature/unit\",\n      \"/processdatamaster/voltage\",\n      \"/processdatamaster/voltage/unit\",\n      \"/processdatamaster/supervisionstatus\",\n      \"/processdatamaster/current\",\n      \"/processdatamaster/current/unit\",\n      \n    ]\n  }\n}\n    \nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 120,
+        "wires": [
+            [
+                "28a54d7c14c358be"
+            ]
+        ]
+    },
+    {
+        "id": "28a54d7c14c358be",
+        "type": "http request",
+        "z": "40ac7eb6a389d215",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "${MASTER_IP}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 550,
+        "y": 120,
+        "wires": [
+            [
+                "6c7da7ba3d70a9fa"
+            ]
+        ]
+    },
+    {
+        "id": "6c7da7ba3d70a9fa",
+        "type": "function",
+        "z": "40ac7eb6a389d215",
+        "name": "function 5",
+        "func": "var json_out = {}\n\n\n// Para el fieldbus se tiene los valores 0,,2,3,4,5\nconst fieldBusTypes = [\"Profinet\",\"\", \"EtherNet/IP\", \"EtherCAT\", \n                        \"Modbus-TCP\", \"IoT\"]\n\n// Para el estado del maestro se tiene \nconst supervisionStatuses = [\"OK\", \"Fault\"]\n\nif (msg.payload.code === 200){\n    json_out[\"supervisionstatus\"] = supervisionStatuses[msg.payload.data[\"/processdatamaster/supervisionstatus\"].data]\n    json_out[\"devicefamily\"] = msg.payload.data[\"/deviceinfo/devicefamily\"].data\n    json_out[\"productcode\"] = msg.payload.data[\"/deviceinfo/productcode\"].data\n    json_out[\"serialnumber\"] = msg.payload.data[\"/deviceinfo/serialnumber\"].data\n    json_out[\"fieldbustype\"] = fieldBusTypes[msg.payload.data[\"/deviceinfo/fieldbustype\"].data]\n    json_out[\"temperature\"] = msg.payload.data[\"/processdatamaster/temperature\"].data\n    json_out[\"temperatureunit\"] = msg.payload.data[\"/processdatamaster/temperature/unit\"].data\n    json_out[\"voltage\"] = msg.payload.data[\"/processdatamaster/voltage\"].data\n    json_out[\"voltageunit\"] = msg.payload.data[\"/processdatamaster/voltage/unit\"].data\n    json_out[\"current\"] = msg.payload.data[\"/processdatamaster/current\"].data\n    json_out[\"currentunit\"] = msg.payload.data[\"/processdatamaster/current/unit\"].data\n  \n}\n\nmsg.payload = json_out;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3630bc778c27df77",
+        "type": "function",
+        "z": "c395f374d5bba422",
+        "name": "GET MASTER DATA",
+        "func": "\nmsg.payload ={\n  \"code\": \"request\",\n  \"cid\": 1,\n  \"adr\": \"/getdatamulti\",\n  \"data\": {\n    \"datatosend\": [\n      \"/iolinkmaster/port[1]/iolinkdevice/status\",\n      \"/iolinkmaster/port[1]/iolinkdevice/serial\",\n      \"/iolinkmaster/port[1]/iolinkdevice/productname\",\n      \"/iolinkmaster/port[1]/iolinkdevice/pdin\",\n\n      \"/iolinkmaster/port[2]/iolinkdevice/status\",\n      \"/iolinkmaster/port[2]/iolinkdevice/serial\",\n      \"/iolinkmaster/port[2]/iolinkdevice/productname\",\n      \"/iolinkmaster/port[2]/iolinkdevice/pdin\",\n\n      \"/iolinkmaster/port[3]/iolinkdevice/status\",\n      \"/iolinkmaster/port[3]/iolinkdevice/serial\",\n      \"/iolinkmaster/port[3]/iolinkdevice/productname\",\n      \"/iolinkmaster/port[3]/iolinkdevice/pdin\",\n\n      \"/iolinkmaster/port[4]/iolinkdevice/status\",\n      \"/iolinkmaster/port[4]/iolinkdevice/serial\",\n      \"/iolinkmaster/port[4]/iolinkdevice/productname\",\n      \"/iolinkmaster/port[4]/iolinkdevice/pdin\",\n\n      \"/iolinkmaster/port[5]/iolinkdevice/status\",\n      \"/iolinkmaster/port[5]/iolinkdevice/serial\",\n      \"/iolinkmaster/port[5]/iolinkdevice/productname\",\n      \"/iolinkmaster/port[5]/iolinkdevice/pdin\",\n\n      \"/iolinkmaster/port[6]/iolinkdevice/status\",\n      \"/iolinkmaster/port[6]/iolinkdevice/serial\",\n      \"/iolinkmaster/port[6]/iolinkdevice/productname\",\n      \"/iolinkmaster/port[6]/iolinkdevice/pdin\",\n\n      \"/iolinkmaster/port[7]/iolinkdevice/status\",\n      \"/iolinkmaster/port[7]/iolinkdevice/serial\",\n      \"/iolinkmaster/port[7]/iolinkdevice/productname\",\n      \"/iolinkmaster/port[7]/iolinkdevice/pdin\",\n\n      \"/iolinkmaster/port[8]/iolinkdevice/status\",\n      \"/iolinkmaster/port[8]/iolinkdevice/serial\",\n      \"/iolinkmaster/port[8]/iolinkdevice/productname\",\n      \"/iolinkmaster/port[8]/iolinkdevice/pdin\",\n  \n    ]\n  }\n}\n    \nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 180,
+        "wires": [
+            [
+                "3b0c6b0ce2de201f"
+            ]
+        ]
+    },
+    {
+        "id": "3b0c6b0ce2de201f",
+        "type": "http request",
+        "z": "c395f374d5bba422",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "${MASTER_IP}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 590,
+        "y": 180,
+        "wires": [
+            [
+                "c15cf967684ffca6"
+            ]
+        ]
+    },
+    {
+        "id": "c15cf967684ffca6",
+        "type": "function",
+        "z": "c395f374d5bba422",
+        "name": "function 4",
+        "func": "var json_out = {};\nconst ports = 8;\n\n// Los estados del dispositvo cada puerto pueden ser 0, 1, 2, 3\n// que significan\nconst statuses = [\n    \"Not connected\",\n    \"Preoperate\",\n    \"Operate\",\n    \"Communication Error\",\n];\n\nfor (let i = 1; i <= ports; i++) {\n    if (msg.payload.data[`/iolinkmaster/port[${i}]/iolinkdevice/status`].data === 2) {\n        json_out[`port${i}`] = {\n            status: statuses[msg.payload.data[`/iolinkmaster/port[${i}]/iolinkdevice/status`].data],\n            serial: msg.payload.data[`/iolinkmaster/port[${i}]/iolinkdevice/serial`].data,\n            productname: msg.payload.data[`/iolinkmaster/port[${i}]/iolinkdevice/productname`].data,\n            data: msg.payload.data[`/iolinkmaster/port[${i}]/iolinkdevice/pdin`].data,\n        };\n    } else {\n        json_out[`port${i}`] = {\n            status: statuses[msg.payload.data[`/iolinkmaster/port[${i}]/iolinkdevice/status`].data],\n        };\n    }\n}\n\nmsg.payload = json_out;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aafb74efcc67cf08",
+        "type": "http request",
+        "z": "1af9c3d86050e6d8",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "${MASTER_IP}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 690,
+        "y": 240,
+        "wires": [
+            [
+                "6e1c2ee35532d0e4"
+            ]
+        ]
+    },
+    {
+        "id": "481c54b5c45a7a73",
+        "type": "function",
+        "z": "1af9c3d86050e6d8",
+        "name": "GET PORT DATA",
+        "func": "\n\nmsg.payload ={\n  \"code\": \"request\",\n  \"cid\": 1,\n  \"adr\": \"/getdatamulti\",\n  \"data\": {\n    \"datatosend\": [\n      `/iolinkmaster/port[${env.get(\"PORT\")}]/iolinkdevice/status`,\n      `/iolinkmaster/port[${env.get(\"PORT\")}]/iolinkdevice/serial`,\n      `/iolinkmaster/port[${env.get(\"PORT\")}]/iolinkdevice/productname`,\n      `/iolinkmaster/port[${env.get(\"PORT\")}]/iolinkdevice/pdin`\n  \n    ]\n  }\n}\n    \nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 240,
+        "wires": [
+            [
+                "aafb74efcc67cf08"
+            ]
+        ]
+    },
+    {
+        "id": "6e1c2ee35532d0e4",
+        "type": "function",
+        "z": "1af9c3d86050e6d8",
+        "name": "function 2",
+        "func": "var json_out = {}\nconst parentString = `/iolinkmaster/port[${ env.get(\"PORT\")}]/iolinkdevice`;\n// Los estados del dispositvo en el puerto pueden ser 0, 1, 2, 3\n// que significan\nconst statuses = [\"Not connected\", \"Preoperate\", \"Operate\", \"Communication Error\"]\n\n\nif (msg.payload.data[`${parentString}/status`].data === 2){\n    json_out[`port${ env.get(\"PORT\")}`]= {\n        status: statuses[msg.payload.data[`${parentString}/status`].data],\n        serial: msg.payload.data[`${ parentString }/serial`].data,\n        productname: msg.payload.data[`${parentString }/productname`].data,\n        data: msg.payload.data[`${parentString }/pdin`].data,\n    }\n    \n\n}\nelse {\n    json_out[`port${env.get(\"PORT\")}`]= {\n        status:statuses[msg.payload.data[`${parentString}/status`].data]\n    }\n}\n\n\nmsg.payload = json_out;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7e73167df8a5611c",
+        "type": "inject",
+        "z": "8e47835b6811afb5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "ddbb5677344f19e5"
+            ]
+        ]
+    },
+    {
+        "id": "ddbb5677344f19e5",
+        "type": "change",
+        "z": "8e47835b6811afb5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gateway_data",
+                "pt": "global",
+                "to": "{\"gateway_key\":\"AXOITE\",\"timestamp\":0,\"data\":{\"gateway_info\":{\"eth_ip\":\"-\",\"vpn_ip\":\"-\",\"ping_acme\":\"-\",\"total_space\":\"-\",\"free_space\":\"-\",\"temperature\":0,\"vbat\":0,\"num_gps_sat\":0},\"gps\":{\"pos_valid\":0,\"latitude\":0,\"longitude\":0,\"altitude\":0,\"haccuracy\":0,\"speed\":0,\"course\":0}}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "10fe9b1f0057fb10",
+        "type": "mqtt out",
+        "z": "7dcfd4ba3841be1d",
+        "g": "2464b523963ae302",
+        "name": "",
+        "topic": "data_live",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8d53d2f17df7fbc4",
+        "x": 560,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ce80aa21413d62c3",
+        "type": "function",
+        "z": "7dcfd4ba3841be1d",
+        "g": "2464b523963ae302",
+        "name": "function 103",
+        "func": "var data_json = global.get('gateway_data');\ndata_json.timestamp = msg.payload;\nmsg.payload = data_json;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 120,
+        "wires": [
+            [
+                "10fe9b1f0057fb10"
+            ]
+        ]
+    },
+    {
+        "id": "d825a23051422fb4",
+        "type": "inject",
+        "z": "7dcfd4ba3841be1d",
+        "g": "2464b523963ae302",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 120,
+        "wires": [
+            [
+                "ce80aa21413d62c3"
+            ]
+        ]
+    },
+    {
+        "id": "b9d38b5e6e1f073e",
+        "type": "function",
+        "z": "7dcfd4ba3841be1d",
+        "g": "1f18b9b8764a1785",
+        "name": "function 103",
+        "func": "\nmsg.topic = \"INSERT INTO `offline_data` (`data`) VALUES ('\"+ msg.payload + \"');\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 600,
+        "wires": [
+            [
+                "62c8271bae5eb53d",
+                "f3159f19b27bce70"
+            ]
+        ]
+    },
+    {
+        "id": "62c8271bae5eb53d",
+        "type": "mysql",
+        "z": "7dcfd4ba3841be1d",
+        "g": "1f18b9b8764a1785",
+        "mydb": "88b50ad2f3359e26",
+        "name": "",
+        "x": 760,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "52ad0311966dd710",
+        "type": "json",
+        "z": "7dcfd4ba3841be1d",
+        "g": "1f18b9b8764a1785",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 430,
+        "y": 600,
+        "wires": [
+            [
+                "b9d38b5e6e1f073e"
+            ]
+        ]
+    },
+    {
+        "id": "f3159f19b27bce70",
+        "type": "debug",
+        "z": "7dcfd4ba3841be1d",
+        "g": "1f18b9b8764a1785",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "0ae262d37f890248",
+        "type": "link in",
+        "z": "7dcfd4ba3841be1d",
+        "g": "1f18b9b8764a1785",
+        "name": "",
+        "links": [
+            "6a0d6344d5559850",
+            "1d325151593e5d32",
+            "1e25561a9469138c"
+        ],
+        "x": 95,
+        "y": 600,
+        "wires": [
+            [
+                "b16970a0fdedc8cb"
+            ]
+        ]
+    },
+    {
+        "id": "b16970a0fdedc8cb",
+        "type": "function",
+        "z": "7dcfd4ba3841be1d",
+        "g": "1f18b9b8764a1785",
+        "name": "server connection",
+        "func": "var connections = global.get('connections');\n\n\nif (connections.acme_server == false){\n    // Not connected\n    node.status({ fill: \"green\", shape: \"ring\", text: \"disconnected - saving\" });\n    return [null, msg];\n    \n}\nelse{\n    // Connected\n    node.status({ fill: \"green\", shape: \"dot\", text: \"connected - no save\" });\n    return [msg, null];\n    \n}\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 600,
+        "wires": [
+            [],
+            [
+                "52ad0311966dd710"
+            ]
+        ]
+    },
+    {
+        "id": "01207b1a9090a113",
+        "type": "mysql",
+        "z": "7dcfd4ba3841be1d",
+        "g": "cce43c31c24f1ee1",
+        "mydb": "88b50ad2f3359e26",
+        "name": "",
+        "x": 740,
+        "y": 720,
+        "wires": [
+            [
+                "e977377a8f2b8b1f"
+            ]
+        ]
+    },
+    {
+        "id": "84e770d69f447dc8",
+        "type": "function",
+        "z": "7dcfd4ba3841be1d",
+        "g": "cce43c31c24f1ee1",
+        "name": "obtener primer dato",
+        "func": "msg.topic = \"SELECT data FROM offline_data LIMIT 1;\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 720,
+        "wires": [
+            [
+                "01207b1a9090a113"
+            ]
+        ]
+    },
+    {
+        "id": "e977377a8f2b8b1f",
+        "type": "function",
+        "z": "7dcfd4ba3841be1d",
+        "g": "cce43c31c24f1ee1",
+        "name": "Procesar para mqtt",
+        "func": "var array_in = msg.payload;\nvar data_out = [];\n\n\n\nif (msg.payload[0] == undefined){\n    node.status({ fill: \"green\", shape: \"ring\", text: \"empty data\" });\n    return null;    \n}\n\nelse {\n    data_out = JSON.parse(msg.payload[0].data);\n    \n    node.status({ fill: \"green\", shape: \"dot\", text: \"sending offline\" });\n\n    msg.payload = data_out;\n\n    return msg;\n\n}\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 720,
+        "wires": [
+            [
+                "8b18d54678984ed7",
+                "b6ef553a4cd0fd14"
+            ]
+        ]
+    },
+    {
+        "id": "8b18d54678984ed7",
+        "type": "mqtt out",
+        "z": "7dcfd4ba3841be1d",
+        "g": "cce43c31c24f1ee1",
+        "name": "",
+        "topic": "data/offline/itemaq",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8d53d2f17df7fbc4",
+        "x": 1150,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "b6ef553a4cd0fd14",
+        "type": "function",
+        "z": "7dcfd4ba3841be1d",
+        "g": "cce43c31c24f1ee1",
+        "name": "Eliminar dato enviado",
+        "func": "\n// elimina el primer dato\nmsg.topic = \"DELETE FROM offline_data LIMIT 1;\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 800,
+        "wires": [
+            [
+                "59b0964c4be0bc7d"
+            ]
+        ]
+    },
+    {
+        "id": "59b0964c4be0bc7d",
+        "type": "mysql",
+        "z": "7dcfd4ba3841be1d",
+        "g": "cce43c31c24f1ee1",
+        "mydb": "88b50ad2f3359e26",
+        "name": "",
+        "x": 1100,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c37ab1deec531147",
+        "type": "mqtt out",
+        "z": "7dcfd4ba3841be1d",
+        "g": "2464b523963ae302",
+        "name": "",
+        "topic": "data/online/save",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8d53d2f17df7fbc4",
+        "x": 580,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d98ab125d5953ad2",
+        "type": "function",
+        "z": "7dcfd4ba3841be1d",
+        "g": "2464b523963ae302",
+        "name": "function 104",
+        "func": "// Json parse y stringify para que sea una copia\nvar data_json = JSON.parse(JSON.stringify(global.get('gateway_data')));\ndata_json.timestamp = msg.payload;\n\ndelete data_json.data.gateway_info;\n\nmsg.payload = data_json;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "1e25561a9469138c",
+                "c37ab1deec531147"
+            ]
+        ]
+    },
+    {
+        "id": "f5a75f5cdcb3c4dd",
+        "type": "inject",
+        "z": "7dcfd4ba3841be1d",
+        "g": "2464b523963ae302",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "d98ab125d5953ad2"
+            ]
+        ]
+    },
+    {
+        "id": "1e25561a9469138c",
+        "type": "link out",
+        "z": "7dcfd4ba3841be1d",
+        "g": "2464b523963ae302",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "0ae262d37f890248",
+            "9502b96ac11dea24",
+            "80cc8c7dae71c897"
+        ],
+        "x": 505,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "7a0f624f343a5234",
+        "type": "function",
+        "z": "7dcfd4ba3841be1d",
+        "g": "cce43c31c24f1ee1",
+        "name": "server connection",
+        "func": "var connections = global.get('connections');\n\nif (connections.acme_server == false){\n    // Not connected\n    node.status({ fill: \"green\", shape: \"ring\", text: \"disconnected\" });\n    return [null, msg];\n\n}\nelse{\n    // Connected\n    node.status({ fill: \"green\", shape: \"dot\", text: \"connected - retreiving\" });\n    \n    return [msg, null];\n\n    \n}\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 720,
+        "wires": [
+            [
+                "84e770d69f447dc8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4d8e90046bdc84ea",
+        "type": "inject",
+        "z": "7dcfd4ba3841be1d",
+        "g": "cce43c31c24f1ee1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 720,
+        "wires": [
+            [
+                "7a0f624f343a5234"
+            ]
+        ]
+    },
+    {
+        "id": "121f11e8ca291a0e",
+        "type": "function",
+        "z": "7dcfd4ba3841be1d",
+        "g": "6b7c1f4fbbe77c84",
+        "name": "function 103",
+        "func": "\nmsg.topic = \"INSERT INTO `local_data_temperatures` (`date`, `data`) VALUES (FROM_UNIXTIME(\" + msg.timestamp/1000 + \"),'\"+ msg.payload + \"');\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 440,
+        "wires": [
+            [
+                "c4c0299bf7185dbc",
+                "838733237fd1d982"
+            ]
+        ]
+    },
+    {
+        "id": "c4c0299bf7185dbc",
+        "type": "mysql",
+        "z": "7dcfd4ba3841be1d",
+        "g": "6b7c1f4fbbe77c84",
+        "mydb": "88b50ad2f3359e26",
+        "name": "",
+        "x": 920,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bcd67702c395a8fb",
+        "type": "json",
+        "z": "7dcfd4ba3841be1d",
+        "g": "6b7c1f4fbbe77c84",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 510,
+        "y": 440,
+        "wires": [
+            [
+                "121f11e8ca291a0e"
+            ]
+        ]
+    },
+    {
+        "id": "838733237fd1d982",
+        "type": "debug",
+        "z": "7dcfd4ba3841be1d",
+        "g": "6b7c1f4fbbe77c84",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "80cc8c7dae71c897",
+        "type": "link in",
+        "z": "7dcfd4ba3841be1d",
+        "g": "6b7c1f4fbbe77c84",
+        "name": "",
+        "links": [
+            "1e25561a9469138c"
+        ],
+        "x": 105,
+        "y": 440,
+        "wires": [
+            [
+                "2a844fa766724955"
+            ]
+        ]
+    },
+    {
+        "id": "2a844fa766724955",
+        "type": "function",
+        "z": "7dcfd4ba3841be1d",
+        "g": "6b7c1f4fbbe77c84",
+        "name": "Filter local data (Editable)",
+        "func": "let out_data = {}\n\n// Mantener siempre el de timestamp\nout_data.timestamp = msg.payload.timestamp;\n\nout_data.temperatura_1 = msg.payload.data[\"01/12922\"].temperature.toFixed(2);\nout_data.temperatura_2 = msg.payload.data[\"q0097270118\"].temperature.toFixed(2);\nout_data.temperatura_3 = msg.payload.data[\"000007618386\"].temperature.toFixed(2);\n\nmsg.timestamp = msg.payload.timestamp;\nmsg.payload = out_data;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 440,
+        "wires": [
+            [
+                "bcd67702c395a8fb"
+            ]
+        ]
+    },
+    {
+        "id": "545927d79126b532",
+        "type": "inject",
+        "z": "7dcfd4ba3841be1d",
+        "g": "1d1b1c227a0bc262",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 920,
+        "wires": [
+            [
+                "75f4430f63d837a1"
+            ]
+        ]
+    },
+    {
+        "id": "75f4430f63d837a1",
+        "type": "function",
+        "z": "7dcfd4ba3841be1d",
+        "g": "1d1b1c227a0bc262",
+        "name": "DELETE ALL",
+        "func": "\nmsg.topic = `\n  DELETE FROM local_data_temperatures;\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 920,
+        "wires": [
+            [
+                "0c617771a3bf80f9"
+            ]
+        ]
+    },
+    {
+        "id": "0c617771a3bf80f9",
+        "type": "mysql",
+        "z": "7dcfd4ba3841be1d",
+        "g": "1d1b1c227a0bc262",
+        "mydb": "88b50ad2f3359e26",
+        "name": "",
+        "x": 540,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c86993f08e188485",
+        "type": "subflow:1af9c3d86050e6d8",
+        "z": "4b1b4aacfc414975",
+        "name": "",
+        "env": [
+            {
+                "name": "PORT",
+                "value": "8",
+                "type": "num"
+            },
+            {
+                "name": "MASTER_IP",
+                "value": "192.168.82.78",
+                "type": "str"
+            },
+            {
+                "name": "IP_DIRECTION",
+                "value": "192.168.82.150",
+                "type": "str"
+            }
+        ],
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "6c554b7ce563157f",
+                "666b0a4373831147"
+            ]
+        ]
+    },
+    {
+        "id": "f1e4dc8a31d2a0d7",
+        "type": "inject",
+        "z": "4b1b4aacfc414975",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 280,
+        "wires": [
+            [
+                "c86993f08e188485"
+            ]
+        ]
+    },
+    {
+        "id": "f4035a1f3449b3ca",
+        "type": "debug",
+        "z": "4b1b4aacfc414975",
+        "name": "debug 167",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9469d06d5b720922",
+        "type": "subflow:c395f374d5bba422",
+        "z": "4b1b4aacfc414975",
+        "name": "",
+        "env": [
+            {
+                "name": "MASTER_IP",
+                "value": "192.168.82.78",
+                "type": "str"
+            }
+        ],
+        "x": 320,
+        "y": 420,
+        "wires": [
+            [
+                "2dfb447c89c12189",
+                "9f4fc80006b95755"
+            ]
+        ]
+    },
+    {
+        "id": "8aef6c759a31b2df",
+        "type": "inject",
+        "z": "4b1b4aacfc414975",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 420,
+        "wires": [
+            [
+                "9469d06d5b720922"
+            ]
+        ]
+    },
+    {
+        "id": "4345b1ff3cc9bff0",
+        "type": "debug",
+        "z": "4b1b4aacfc414975",
+        "name": "debug 168",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "b5cc05babdd37854",
+        "type": "debug",
+        "z": "4b1b4aacfc414975",
+        "name": "debug 169",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "13941ee59b44b8dc",
+        "type": "subflow:40ac7eb6a389d215",
+        "z": "4b1b4aacfc414975",
+        "name": "",
+        "env": [
+            {
+                "name": "MASTER_IP",
+                "value": "192.168.82.78",
+                "type": "str"
+            }
+        ],
+        "x": 340,
+        "y": 140,
+        "wires": [
+            [
+                "b5cc05babdd37854"
+            ]
+        ]
+    },
+    {
+        "id": "795bbcc89f400a22",
+        "type": "inject",
+        "z": "4b1b4aacfc414975",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "13941ee59b44b8dc"
+            ]
+        ]
+    },
+    {
+        "id": "2dfb447c89c12189",
+        "type": "subflow:d8eff534107492f4",
+        "z": "4b1b4aacfc414975",
+        "name": "",
+        "x": 510,
+        "y": 420,
+        "wires": [
+            [
+                "e1fe541c25dd4efc",
+                "fb64694a10560a6f"
+            ]
+        ]
+    },
+    {
+        "id": "6c554b7ce563157f",
+        "type": "subflow:d8eff534107492f4",
+        "z": "4b1b4aacfc414975",
+        "name": "",
+        "x": 570,
+        "y": 280,
+        "wires": [
+            [
+                "f4035a1f3449b3ca"
+            ]
+        ]
+    },
+    {
+        "id": "9f4fc80006b95755",
+        "type": "debug",
+        "z": "4b1b4aacfc414975",
+        "name": "debug 170",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "50245efcaf0e3801",
+        "type": "comment",
+        "z": "4b1b4aacfc414975",
+        "name": "Librería implementada",
+        "info": "",
+        "x": 140,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "666b0a4373831147",
+        "type": "debug",
+        "z": "4b1b4aacfc414975",
+        "name": "debug 171",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "e1fe541c25dd4efc",
+        "type": "function",
+        "z": "4b1b4aacfc414975",
+        "name": "convert to serial and data",
+        "func": "const input = msg.payload;\nvar serialsAndData = {};\nfor (const port in input) {\n  const portData = input[port];\n  const serial = portData.serial;\n  const data = portData.data;\n\n  if (serial && data && typeof data === 'object') {\n    serialsAndData[serial] = data;\n  }\n}\nmsg.payload = serialsAndData;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 420,
+        "wires": [
+            [
+                "4345b1ff3cc9bff0",
+                "814d7d6677bb7091"
+            ]
+        ]
+    },
+    {
+        "id": "fb64694a10560a6f",
+        "type": "debug",
+        "z": "4b1b4aacfc414975",
+        "name": "debug 174",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "814d7d6677bb7091",
+        "type": "function",
+        "z": "4b1b4aacfc414975",
+        "name": "adding iolink to global",
+        "func": "\n// Asigna el mensaje general a una variable\nvar gatewayData = global.get('gateway_data');\n\n// Itera sobre todas las claves en msg.payload\nfor (var key in msg.payload) {\n    // Agrega cada par clave-valor al objeto data del mensaje general\n    gatewayData.data[key] = msg.payload[key];\n}\n\n// Elimina las claves que no están presentes en msg.payload del objeto data\nfor (var key in gatewayData.data) {\n    // Excluye las claves gps y gateway_info\n    if (key !== \"gps\" && key !== \"gateway_info\" && !(key in msg.payload)) {\n        delete gatewayData.data[key];\n    }\n}\n\n\n// Actualiza el mensaje general con los nuevos datos\nglobal.set('gateway_data', gatewayData);\n\n\nmsg.payload = gatewayData;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 420,
+        "wires": [
+            [
+                "72acbb7a1e1657eb"
+            ]
+        ]
+    },
+    {
+        "id": "72acbb7a1e1657eb",
+        "type": "debug",
+        "z": "4b1b4aacfc414975",
+        "name": "debug 175",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "2d7923c474abe8c7",
+        "type": "serial in",
+        "z": "87fe75fba6b00d60",
+        "name": "",
+        "serial": "eadfda525a15b034",
+        "x": 90,
+        "y": 300,
+        "wires": [
+            [
+                "be4fa11e3767c765"
+            ]
+        ]
+    },
+    {
+        "id": "2e2a96912f9d7f28",
+        "type": "switch",
+        "z": "87fe75fba6b00d60",
+        "name": "VTG (velocidad km/h)",
+        "property": "payload.sentence",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "VTG",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 500,
+        "y": 440,
+        "wires": [
+            [
+                "e3cb23e9838998a9"
+            ]
+        ]
+    },
+    {
+        "id": "9f8c640d28c2dbbc",
+        "type": "switch",
+        "z": "87fe75fba6b00d60",
+        "name": "GCA (lat, lon, alt)",
+        "property": "payload.sentence",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "GGA",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 200,
+        "wires": [
+            [
+                "71ce98d18eaba14a",
+                "d9359ec226f5a587",
+                "773046d3e8439af1",
+                "e79dd601cc9c793f",
+                "28a64d7c7b708ed3"
+            ]
+        ]
+    },
+    {
+        "id": "71ce98d18eaba14a",
+        "type": "function",
+        "z": "87fe75fba6b00d60",
+        "name": "function 92",
+        "func": "msg.payload = { \"name\": \"Vehículo\", \"lat\": msg.payload.lat, \"lon\": msg.payload.lon }\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e3cb23e9838998a9",
+        "type": "function",
+        "z": "87fe75fba6b00d60",
+        "name": "function 93",
+        "func": "msg.payload = msg.payload.speedKmph\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 440,
+        "wires": [
+            [
+                "b5dfe0c350e6a7ab",
+                "0534cbc24653f9c7"
+            ]
+        ]
+    },
+    {
+        "id": "62e2e4bb0648be2b",
+        "type": "comment",
+        "z": "87fe75fba6b00d60",
+        "name": "Getting GPS data",
+        "info": "",
+        "x": 180,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "773046d3e8439af1",
+        "type": "function",
+        "z": "87fe75fba6b00d60",
+        "name": "longitud",
+        "func": "msg.payload = msg.payload.lon;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 180,
+        "wires": [
+            [
+                "e476710c2d6f2857"
+            ]
+        ]
+    },
+    {
+        "id": "d9359ec226f5a587",
+        "type": "function",
+        "z": "87fe75fba6b00d60",
+        "name": "latitud",
+        "func": "msg.payload = msg.payload.lat;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 120,
+        "wires": [
+            [
+                "1a422330e071023e",
+                "170b8b8963c41720",
+                "a70d426295628e33"
+            ]
+        ]
+    },
+    {
+        "id": "e79dd601cc9c793f",
+        "type": "function",
+        "z": "87fe75fba6b00d60",
+        "name": "altitud",
+        "func": "msg.payload = msg.payload.alt;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 220,
+        "wires": [
+            [
+                "0a51973433ed0faf"
+            ]
+        ]
+    },
+    {
+        "id": "b5dfe0c350e6a7ab",
+        "type": "debug",
+        "z": "87fe75fba6b00d60",
+        "name": "debug 111",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 950,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "7d7cb1a0abb407a4",
+        "type": "debug",
+        "z": "87fe75fba6b00d60",
+        "name": "debug 112",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 930,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "170b8b8963c41720",
+        "type": "change",
+        "z": "87fe75fba6b00d60",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gateway_data.data.gps.latitude",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1000,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e476710c2d6f2857",
+        "type": "change",
+        "z": "87fe75fba6b00d60",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gateway_data.data.gps.longitude",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1010,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0a51973433ed0faf",
+        "type": "change",
+        "z": "87fe75fba6b00d60",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gateway_data.data.gps.altitude",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1000,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a422330e071023e",
+        "type": "debug",
+        "z": "87fe75fba6b00d60",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 910,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "0534cbc24653f9c7",
+        "type": "change",
+        "z": "87fe75fba6b00d60",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gateway_data.data.gps.speed",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1000,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be4fa11e3767c765",
+        "type": "nmea",
+        "z": "87fe75fba6b00d60",
+        "name": "",
+        "property": "payload",
+        "outputProperty": "payload",
+        "x": 270,
+        "y": 300,
+        "wires": [
+            [
+                "2e2a96912f9d7f28",
+                "9f8c640d28c2dbbc"
+            ]
+        ]
+    },
+    {
+        "id": "28a64d7c7b708ed3",
+        "type": "function",
+        "z": "87fe75fba6b00d60",
+        "name": "numero de satelites",
+        "func": "msg.payload = msg.payload.numSat;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 280,
+        "wires": [
+            [
+                "7d7cb1a0abb407a4",
+                "969355727a13dd48"
+            ]
+        ]
+    },
+    {
+        "id": "a70d426295628e33",
+        "type": "change",
+        "z": "87fe75fba6b00d60",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gateway_data.data.gps.pos_valid",
+                "pt": "global",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1010,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a9596faab44e8a33",
+        "type": "catch",
+        "z": "87fe75fba6b00d60",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 420,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "969355727a13dd48",
+        "type": "change",
+        "z": "87fe75fba6b00d60",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gateway_data.data.gateway_info.num_gps_sat",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1070,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f6957c60f691242c",
+        "type": "change",
+        "z": "ac1b7f858f654d07",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "connections",
+                "pt": "global",
+                "to": "{\"acme_server\":false,\"vpn_server\":false}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e659df00a59847c2",
+        "type": "inject",
+        "z": "ac1b7f858f654d07",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 40,
+        "wires": [
+            [
+                "f6957c60f691242c"
+            ]
+        ]
+    },
+    {
+        "id": "c9cde978afbb363d",
+        "type": "inject",
+        "z": "ac1b7f858f654d07",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "15",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 480,
+        "wires": [
+            [
+                "881fd3c483db04a9",
+                "5611ce40d44b863a",
+                "859dde0a440deb3d",
+                "daca6e4fef23766a",
+                "d576e7fb869f36cf"
+            ]
+        ]
+    },
+    {
+        "id": "881fd3c483db04a9",
+        "type": "exec",
+        "z": "ac1b7f858f654d07",
+        "command": "echo -n $(echo -n $(ip addr show eth0 | grep -oP 'inet \\K\\S+'))",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 460,
+        "y": 460,
+        "wires": [
+            [
+                "80755401e99146fb"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "80755401e99146fb",
+        "type": "change",
+        "z": "ac1b7f858f654d07",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gateway_data.data.gateway_info.eth_ip",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5611ce40d44b863a",
+        "type": "exec",
+        "z": "ac1b7f858f654d07",
+        "command": "echo -n $(df -h --total | grep /dev/root | awk '{print$2}')",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 440,
+        "y": 580,
+        "wires": [
+            [
+                "8931face9461a432"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "859dde0a440deb3d",
+        "type": "exec",
+        "z": "ac1b7f858f654d07",
+        "command": "echo -n $(df -h --total | grep /dev/root | awk '{print$4}')",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 440,
+        "y": 660,
+        "wires": [
+            [
+                "9c3013b28a9565d1"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8931face9461a432",
+        "type": "change",
+        "z": "ac1b7f858f654d07",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gateway_data.data.gateway_info.total_space",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 970,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c3013b28a9565d1",
+        "type": "change",
+        "z": "ac1b7f858f654d07",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gateway_data.data.gateway_info.free_space",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "daca6e4fef23766a",
+        "type": "exec",
+        "z": "ac1b7f858f654d07",
+        "command": "echo -n $(vcgencmd measure_temp)",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 390,
+        "y": 740,
+        "wires": [
+            [
+                "a62d96489e8eb651"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "6e5bce5ba042c84c",
+        "type": "change",
+        "z": "ac1b7f858f654d07",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gateway_data.data.gateway_info.temperature",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 970,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a62d96489e8eb651",
+        "type": "change",
+        "z": "ac1b7f858f654d07",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$substring(payload,5,4)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 740,
+        "wires": [
+            [
+                "6e5bce5ba042c84c"
+            ]
+        ]
+    },
+    {
+        "id": "d576e7fb869f36cf",
+        "type": "exec",
+        "z": "ac1b7f858f654d07",
+        "command": "echo -n $(echo -n $(ip addr show ztly5urarz | grep -oP 'inet \\K\\S+'))",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 480,
+        "y": 520,
+        "wires": [
+            [
+                "18143b71a038485b"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "18143b71a038485b",
+        "type": "change",
+        "z": "ac1b7f858f654d07",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gateway_data.data.gateway_info.vpn_ip",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "38caaff4.03f6d",
+        "type": "trigger",
+        "z": "ac1b7f858f654d07",
+        "name": "Watchdog de conectividad",
+        "op1": "",
+        "op2": "timeout",
+        "op1type": "nul",
+        "op2type": "str",
+        "duration": "15",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 820,
+        "y": 140,
+        "wires": [
+            [
+                "2b369df76279ad73",
+                "51e008ab41dcb5b3"
+            ]
+        ]
+    },
+    {
+        "id": "059025bc19ecb0a9",
+        "type": "exec",
+        "z": "ac1b7f858f654d07",
+        "command": "/root/gateway_scripts/ping.sh 161.132.39.167 2",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 420,
+        "y": 160,
+        "wires": [
+            [
+                "9a5e3f278fb312f9",
+                "38caaff4.03f6d",
+                "73234d6432232c95"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c87eec97aa950e18",
+        "type": "inject",
+        "z": "ac1b7f858f654d07",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 240,
+        "wires": [
+            [
+                "059025bc19ecb0a9",
+                "288dee6511f7e26e"
+            ]
+        ]
+    },
+    {
+        "id": "9a5e3f278fb312f9",
+        "type": "change",
+        "z": "ac1b7f858f654d07",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gateway_data.data.gateway_info.ping_acme",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "connections.acme_server",
+                "pt": "global",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 80,
+        "wires": [
+            [
+                "a8c9817b1faa931a"
+            ]
+        ]
+    },
+    {
+        "id": "2b369df76279ad73",
+        "type": "change",
+        "z": "ac1b7f858f654d07",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "gateway_data.data.gateway_info.ping_acme",
+                "pt": "global",
+                "to": "-",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "connections.acme_server",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1080,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "288dee6511f7e26e",
+        "type": "exec",
+        "z": "ac1b7f858f654d07",
+        "command": "/root/gateway_scripts/ping.sh 192.168.192.198 2",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 420,
+        "y": 320,
+        "wires": [
+            [
+                "e722aee246e0bdbe",
+                "d5216eca0b6a274b",
+                "2198dff47070e9e1"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "73234d6432232c95",
+        "type": "debug",
+        "z": "ac1b7f858f654d07",
+        "name": "latencia (ms)",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 770,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e722aee246e0bdbe",
+        "type": "change",
+        "z": "ac1b7f858f654d07",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "connections.vpn_server",
+                "pt": "global",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d5216eca0b6a274b",
+        "type": "trigger",
+        "z": "ac1b7f858f654d07",
+        "name": "Watchdog de conectividad",
+        "op1": "",
+        "op2": "timeout",
+        "op1type": "nul",
+        "op2type": "str",
+        "duration": "15",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 800,
+        "y": 300,
+        "wires": [
+            [
+                "75a253bb66197670"
+            ]
+        ]
+    },
+    {
+        "id": "2198dff47070e9e1",
+        "type": "debug",
+        "z": "ac1b7f858f654d07",
+        "name": "latencia (ms)",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 770,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "75a253bb66197670",
+        "type": "change",
+        "z": "ac1b7f858f654d07",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "connections.vpn_server",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1140,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a8c9817b1faa931a",
+        "type": "change",
+        "z": "ac1b7f858f654d07",
+        "name": "connect broker",
+        "rules": [
+            {
+                "t": "set",
+                "p": "action",
+                "pt": "msg",
+                "to": "connect",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 80,
+        "wires": [
+            [
+                "685effe7660463c8"
+            ]
+        ]
+    },
+    {
+        "id": "51e008ab41dcb5b3",
+        "type": "change",
+        "z": "ac1b7f858f654d07",
+        "name": "disconnect broker",
+        "rules": [
+            {
+                "t": "set",
+                "p": "action",
+                "pt": "msg",
+                "to": "disconnect",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1090,
+        "y": 180,
+        "wires": [
+            [
+                "e42f7a013233d24c"
+            ]
+        ]
+    },
+    {
+        "id": "685effe7660463c8",
+        "type": "mqtt out",
+        "z": "ac1b7f858f654d07",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8d53d2f17df7fbc4",
+        "x": 1170,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "e42f7a013233d24c",
+        "type": "mqtt out",
+        "z": "ac1b7f858f654d07",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8d53d2f17df7fbc4",
+        "x": 1250,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "5c869004c94f9e5b",
+        "type": "function",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "name": "Query ",
+        "func": "\nmsg.topic = `\n  SELECT * FROM local_data_temperatures WHERE date < CURDATE();\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "6be862ef70aa5ce0"
+            ]
+        ]
+    },
+    {
+        "id": "6be862ef70aa5ce0",
+        "type": "mysql",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "mydb": "88b50ad2f3359e26",
+        "name": "",
+        "x": 460,
+        "y": 160,
+        "wires": [
+            [
+                "bdd4d3fb6e929cc7"
+            ]
+        ]
+    },
+    {
+        "id": "a7d503cc74fad55a",
+        "type": "inject",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "01 00 * * 6",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "5c869004c94f9e5b"
+            ]
+        ]
+    },
+    {
+        "id": "c304b9efafbee2ce",
+        "type": "debug",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1490,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "6da3f330a7d17166",
+        "type": "comment",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "name": "Se guarda a csv cada sábado",
+        "info": "",
+        "x": 180,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "bdd4d3fb6e929cc7",
+        "type": "function",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "name": "Procesar array para csv",
+        "func": "var array_in = msg.payload;\nvar array_out = [];\n\n// All data\nfor (var i = 0; i < array_in.length; i++) {\n    array_out[i] = JSON.parse(msg.payload[i].data);\n    node.warn(array_out[i]);\n    // Converting simple timestamp to human readable\n    // time\n    array_out[i].timestamp = unixTimestampToHumanReadable(array_out[i].timestamp);\n}\n\n// Nombre del archivo CSV\nmsg.filename = `/root/ITEMAQ/TEMPERATURAS/${array_out[0].timestamp.split(\" \")[0]} hasta ${array_out[array_out.length - 1].timestamp.split(\" \")[0]}.csv`;\n\nmsg.payload = array_out;\n\nmsg.columns = Object.keys(msg.payload[0]).toString();\n\n\nreturn msg;\n\n\n\n// Function for timestamp to readable time\nfunction unixTimestampToHumanReadable(unixTimestamp) {\n    const date = new Date(unixTimestamp);\n    const year = date.getFullYear();\n    const month = (date.getMonth() + 1).toString().padStart(2, '0');\n    const day = date.getDate().toString().padStart(2, '0');\n    const hours = date.getHours().toString().padStart(2, '0');\n    const minutes = date.getMinutes().toString().padStart(2, '0');\n    const seconds = date.getSeconds().toString().padStart(2, '0');\n\n    return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n}\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 160,
+        "wires": [
+            [
+                "c659995ce3fdc68c"
+            ]
+        ]
+    },
+    {
+        "id": "c659995ce3fdc68c",
+        "type": "function",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "name": "csv",
+        "func": "function arrayToCSV(data) {\n    // Verificar si el array de datos está vacío\n    if (data.length === 0) {\n        return '';\n    }\n\n    // Obtener las claves del primer objeto JSON para los encabezados de columna\n    const keys = Object.keys(data[0]);\n\n    // Construir los encabezados de columna\n    const headerRow = keys.join(',');\n\n    // Construir filas del CSV\n    const csvRows = [];\n    csvRows.push(headerRow);\n\n    for (const obj of data) {\n        const values = keys.map(key => obj[key]);\n        const csvRow = values.join(',');\n        csvRows.push(csvRow);\n    }\n\n    // Unir todas las filas con saltos de línea\n    return csvRows.join('\\n');\n}\n// Convertir el array de objetos JSON a una cadena CSV\nconst csvString = arrayToCSV(msg.payload);\nmsg.payload = csvString;\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 160,
+        "wires": [
+            [
+                "c4ff83c05b9335ed"
+            ]
+        ]
+    },
+    {
+        "id": "c4ff83c05b9335ed",
+        "type": "file",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 960,
+        "y": 160,
+        "wires": [
+            [
+                "08bfa969958c3141"
+            ]
+        ]
+    },
+    {
+        "id": "08bfa969958c3141",
+        "type": "function",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "name": "delete saved data from db",
+        "func": "// msg.topic = `\n//   DELETE FROM local_data\n//   WHERE date >= DATE_SUB(CURDATE(), INTERVAL 1 WEEK)\n//     AND date < CURDATE();\n// `;\n\n// Eliminar toda la data anterior al dia \nmsg.topic = `\n  DELETE FROM local_data\n  WHERE date < CURDATE();\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 160,
+        "wires": [
+            [
+                "a0b002195171260a"
+            ]
+        ]
+    },
+    {
+        "id": "a0b002195171260a",
+        "type": "mysql",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "mydb": "88b50ad2f3359e26",
+        "name": "",
+        "x": 1340,
+        "y": 160,
+        "wires": [
+            [
+                "c304b9efafbee2ce"
+            ]
+        ]
+    },
+    {
+        "id": "f5322cda4a2f356c",
+        "type": "comment",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "name": "Se guarda cada que el usuario ingrese el USB",
+        "info": "Estos es posible porque el inJect se hace cada semana",
+        "x": 230,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "05d8f608fe5eb3a7",
+        "type": "link in",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "name": "",
+        "links": [
+            "8c5f80b74bc553e1"
+        ],
+        "x": 85,
+        "y": 220,
+        "wires": [
+            [
+                "09cf833d23521682"
+            ]
+        ]
+    },
+    {
+        "id": "4512bff38c8cd675",
+        "type": "link out",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "name": "csv_saved",
+        "mode": "link",
+        "links": [
+            "d8e1fec32d73a756"
+        ],
+        "x": 1065,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "09cf833d23521682",
+        "type": "function",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "name": "Query ",
+        "func": "\nmsg.topic = `\n  SELECT * FROM local_data_temperatures WHERE date < NOW();\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 220,
+        "wires": [
+            [
+                "2d67596ed3833f21"
+            ]
+        ]
+    },
+    {
+        "id": "2d67596ed3833f21",
+        "type": "mysql",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "mydb": "88b50ad2f3359e26",
+        "name": "",
+        "x": 460,
+        "y": 220,
+        "wires": [
+            [
+                "dd8a380bf429ee41"
+            ]
+        ]
+    },
+    {
+        "id": "dd8a380bf429ee41",
+        "type": "function",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "name": "Procesar array para csv",
+        "func": "var array_in = msg.payload;\nvar array_out = [];\n\n// All data\nfor (var i = 0; i < array_in.length; i++) {\n    array_out[i] = JSON.parse(msg.payload[i].data);\n\n    // Converting simple timestamp to human readable\n    // time\n    array_out[i].timestamp = unixTimestampToHumanReadable(array_out[i].timestamp);\n}\n\n// Nombre del archivo CSV\nmsg.filename = `/root/ITEMAQ/TEMPERATURAS/${array_out[0].timestamp.split(\" \")[0]} hasta ${array_out[array_out.length - 1].timestamp.split(\" \")[0]}.csv`;\n\nmsg.payload = array_out;\n\nmsg.columns = Object.keys(msg.payload[0]).toString();\n\n\nreturn msg;\n\n\n\n// Function for timestamp to readable time\nfunction unixTimestampToHumanReadable(unixTimestamp) {\n    const date = new Date(unixTimestamp);\n    const year = date.getFullYear();\n    const month = (date.getMonth() + 1).toString().padStart(2, '0');\n    const day = date.getDate().toString().padStart(2, '0');\n    const hours = date.getHours().toString().padStart(2, '0');\n    const minutes = date.getMinutes().toString().padStart(2, '0');\n    const seconds = date.getSeconds().toString().padStart(2, '0');\n\n    return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n}\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 220,
+        "wires": [
+            [
+                "2f7815677a9ccbf3"
+            ]
+        ]
+    },
+    {
+        "id": "2f7815677a9ccbf3",
+        "type": "function",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "name": "csv",
+        "func": "function arrayToCSV(data) {\n    // Verificar si el array de datos está vacío\n    if (data.length === 0) {\n        return '';\n    }\n\n    // Obtener las claves del primer objeto JSON para los encabezados de columna\n    const keys = Object.keys(data[0]);\n\n    // Construir los encabezados de columna\n    const headerRow = keys.join(',');\n\n    // Construir filas del CSV\n    const csvRows = [];\n    csvRows.push(headerRow);\n\n    for (const obj of data) {\n        const values = keys.map(key => obj[key]);\n        const csvRow = values.join(',');\n        csvRows.push(csvRow);\n    }\n\n    // Unir todas las filas con saltos de línea\n    return csvRows.join('\\n');\n}\n// Convertir el array de objetos JSON a una cadena CSV\nconst csvString = arrayToCSV(msg.payload);\nmsg.payload = csvString;\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 220,
+        "wires": [
+            [
+                "1f4d74f8a25a0a45"
+            ]
+        ]
+    },
+    {
+        "id": "1f4d74f8a25a0a45",
+        "type": "file",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 960,
+        "y": 220,
+        "wires": [
+            [
+                "4512bff38c8cd675"
+            ]
+        ]
+    },
+    {
+        "id": "d6bc1a7f4549becc",
+        "type": "inject",
+        "z": "bd6c8a1221e50f23",
+        "g": "24d00d6b1a472a12",
+        "name": "testing",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "09cf833d23521682"
+            ]
+        ]
+    },
+    {
+        "id": "a8218217a1fc5267",
+        "type": "usb-watch",
+        "z": "b693f57f4f535bde",
+        "name": "",
+        "initialScan": false,
+        "x": 80,
+        "y": 200,
+        "wires": [
+            [
+                "8c5f80b74bc553e1",
+                "d7ab6a0d3ecead7f"
+            ],
+            [
+                "3ed2ef99e1b1cf35",
+                "30bc4083b5852d5c"
+            ]
+        ]
+    },
+    {
+        "id": "8c5f80b74bc553e1",
+        "type": "link out",
+        "z": "b693f57f4f535bde",
+        "name": "usb_connected",
+        "mode": "link",
+        "links": [
+            "05d8f608fe5eb3a7"
+        ],
+        "x": 215,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "fc2bf1ee623d69cf",
+        "type": "comment",
+        "z": "b693f57f4f535bde",
+        "name": "saving csv",
+        "info": "",
+        "x": 300,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d8e1fec32d73a756",
+        "type": "link in",
+        "z": "b693f57f4f535bde",
+        "name": "link in 1",
+        "links": [
+            "4512bff38c8cd675"
+        ],
+        "x": 385,
+        "y": 160,
+        "wires": [
+            [
+                "ddbaf925be0323a9"
+            ]
+        ]
+    },
+    {
+        "id": "ddbaf925be0323a9",
+        "type": "exec",
+        "z": "b693f57f4f535bde",
+        "command": "/root/gateway_scripts/usb_connection_axotec.sh /media/USB /root/ITEMAQ/TEMPERATURAS",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 750,
+        "y": 160,
+        "wires": [
+            [
+                "37765f57bed27c86"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d7ab6a0d3ecead7f",
+        "type": "exec",
+        "z": "b693f57f4f535bde",
+        "command": "echo 1 > /dev/usrled3 ; echo 0 > /dev/usrled2",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 370,
+        "y": 80,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "3ed2ef99e1b1cf35",
+        "type": "exec",
+        "z": "b693f57f4f535bde",
+        "command": "echo 0 > /dev/usrled3 ; echo 0 > /dev/usrled2;",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 400,
+        "y": 300,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "30bc4083b5852d5c",
+        "type": "exec",
+        "z": "b693f57f4f535bde",
+        "command": "sudo umount /media/USB",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 330,
+        "y": 360,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "37765f57bed27c86",
+        "type": "debug",
+        "z": "b693f57f4f535bde",
+        "name": "debug 177",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 140,
+        "wires": []
+    }
+]
